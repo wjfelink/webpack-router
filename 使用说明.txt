@@ -1,0 +1,36 @@
+
+一、利用服务器进行调试：
+
+1 进入命令行，切换到 D:\ctCloud\2016\projects\webpack-master\webpack-master
+
+2 运行 npm start  启动server  // 全写：npm run start   start 是package.json中scripts中一个key名，可以取不同的名字
+
+  启动后，生成的js压缩文件是放在内存中。
+
+3 浏览器输入 localhost:3000/main.html
+
+  当文件修改后，浏览器自动刷新
+
+
+二、以上为调试使用，当发布时，按以下步骤进行：
+
+ 方式1：利用webpack打包
+
+1  进入命令行，切换到 D:\ctCloud\2016\projects\webpack-master\webpack-master
+
+2  运行 webpack  --config webpack_realease.config.js 打包在bulid生成bulid.js文件
+ 
+ 方式2：利用gulp打包
+
+1  进入命令行，切换到 D:\ctCloud\2016\projects\webpack-master\webpack-master
+
+2  运行 gulp 打包在bulid生成bulid.js文件
+
+
+注意：
+
+    调试的时候,用的是 webpack_debug.config.js
+ 
+    发布的时候，用的是webpack_realease.config.js
+
+    
